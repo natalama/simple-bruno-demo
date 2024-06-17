@@ -1,0 +1,14 @@
+{
+  "name": "simple-bruno-demo",
+  "version": "1.0.0",
+  "description": "This is a sample repo on the use of bruno",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Natalie Matic",
+  "license": "MIT",
+  "dependencies": {
+    "js-joda": "^1.11.0"
+  }
+}
