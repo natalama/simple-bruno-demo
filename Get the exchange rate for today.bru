@@ -1,0 +1,11 @@
+meta {
+  name: Get the exchange rate for today
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/{{currentDate}}
+  body: none
+  auth: none
+}

@@ -1,0 +1,14 @@
+script:pre-request {
+  var ZonedDateTime = require('@js-joda/core').ZonedDateTime;
+  var DateTimeFormatter = require('@js-joda/core').DateTimeFormatter
+  
+  const today = ZonedDateTime.now();
+  
+  bru.setEnvVar("yesterday",today.minusDays(1))
+  
+  bru.setEnvVar("currentDate",today.format(DateTimeFormatter.ofPattern('yyyy-MM-dd')))
+}
+
+script:post-response {
+  bru.setEnvVar("currentDate","")
+}
